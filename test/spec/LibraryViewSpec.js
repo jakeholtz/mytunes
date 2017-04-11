@@ -50,7 +50,6 @@ describe('LibraryView', function() {
     });
 
     it('should re-render with fetched songs', function() {
-      // debugger;
       var FakeLibraryView = LibraryView.extend({ render: sinon.spy() });
       view = new FakeLibraryView({ collection: new Songs() });
       expect(view.render).to.have.been.calledOnce;
